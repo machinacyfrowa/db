@@ -16,4 +16,7 @@ while($wiersz = $wynik->fetch_assoc()){
   echo "</tr>";
 }
 echo "</table>";
+
+
+
 ?>
