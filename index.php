@@ -7,10 +7,11 @@ $q = "SELECT * FROM ksiazka";
 $wynik = $db->query($q);
 //while($wiersz = $wynik->fetch_row()){
 echo "<table border=1>";
+echo "<tr><th>id</th><th>Tytuł</th><th>Autor</th><th>Rok wydania</th></tr>";
 while($wiersz = $wynik->fetch_assoc()){
   echo "<tr>";
   foreach ($wiersz as $kolumna => $wartosc) {
-    echo "<td>" . $kolumna . "</td><td>". $wartosc . "</td>";
+    echo "<td>". $wartosc . "</td>";
   }
   echo "</tr>";
 }
