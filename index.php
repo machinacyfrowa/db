@@ -21,7 +21,7 @@ while($wiersz = $wynik->fetch_assoc()){
         </td>";
   echo "<td>
         <a href=\"usun.php?id=$id\">
-        <button>Edycja</button>
+        <button>Usuń</button>
         </a>
         </td>";
   echo "</tr>";
