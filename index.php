@@ -1,5 +1,6 @@
 <?php
 $db = new Mysqli('localhost', 'root', '', 'biblioteka');
+$db->set_charset("utf8");
 echo "<pre>";
 $q = "SELECT * FROM ksiazka";
 //$q = "DELETE FROM ksiazka WHERE id=3";
